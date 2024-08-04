@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLAVOURY</title>
+    <!-- ============================= Font Awesome ============================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ============================= Remix Icons ============================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ============================== Css File ================================ -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ============================= AOS Library ============================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- =========================  Owl Carousel Links  ========================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+
+  
+  </head>
+  <body>
+
+    <!-- ============================== Header ============================== -->
+    <header>
+      <nav class="nav" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo">
+          <i class="ri-restaurant-2-fill"></i>
+          <img src="assets/img/logo.png" alt="" srcset="" />
+        </div>
+        <div class="burger-menu">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="tabs">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="social">
+          <a class="insta" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a class="fb" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============================== HOME ============================== -->
+    <section class="home">
+      <video class="bg-video" autoplay muted loop>
+        <source src="assets/img/bg-video.mp4" type="video/mp4">
+      </video>      
+      <div class="home-content">
+        <div class="home-left">
+          <h1 data-aos="fade-up" data-aos-duration="1000">
+            Taste Delecious <br/>
+            Cuisine Together <br/>
+            with <span>Flavoury</span>
+          </h1>
+          <div class="info" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="time">
+              <i class="fa-solid fa-clock"></i> 9:00 - 20:00
+            </div>
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i> Rizwan Gardens
+            </div>
+          </div>
+          <button class="menuBtn" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" ><a href="https://drive.google.com/file/d/1KxRTs4zrtEJHKMDDbhVmpDjwYGCDWcK4/view?usp=sharing" target="_blank">MENU</a></button>
+        </div>
+        <div class="home-right"></div>
+      </div>
+    </section>
+
+    <!-- ============================== About ============================== -->
+     
+    <section class="about" id="about" >
+    <div class="aboutContainer" data-aos="fade-up" data-aos-duration="500">
+          <div class="imgWrapper">
+              <img src="assets/img/about.jpg" alt="" srcset="">
+          </div>
+          <div class="contentWrapper">
+              <div class="content">
+                  <h1>About Us</h1>
+                  <p>Welcome to Flavoury, where culinary art meets exceptional taste. Located in Lahore, we offer a unique dining experience with a blend of traditional flavors and modern techniques.</p>
+                  <p>We are waiting for you every day from <b>9:00</b> to <b>20:00</b>.</p>
+                  <a href="#" class="learnMore">Learn More <span>&rarr;</span></a>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- ================================ Menu ================================== -->
+
+    <section class="menu" id="menu">
+      <h1 data-aos="fade-up">Menu</h1>
+      <div data-aos="fade-up" data-aos-delay="100" class="menu-tabs">
+          <button class="menu-tab active" data-tab="all">All</button>
+          <button class="menu-tab" data-tab="breakfast">Breakfast</button>
+          <button class="menu-tab" data-tab="lunch">Lunch</button>
+          <button class="menu-tab" data-tab="dinner">Dinner</button>
+      </div>
+      <div class="menu-container" id="menu-container" data-aos="fade-up" data-aos-delay="200">
+          <!-- CARDS WILL BE ADDED HERE USING JS-->
+      </div>
+    </section>
+     
+    <!-- ============================== Testimonials ============================= -->
+
+    <section class="testimonials">
+      <div class="testimonials-section">
+        <header class="section-header" data-aos="fade-up">
+          <h1>What Customers Say</h1>
+        </header>      
+        <div class="owl-carousel owl-theme testimonials-container" data-aos="fade-up" data-aos-delay="100">
+          <!-- Item1 Starts -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <div class="quote">
+                <i class="fa fa-quote-left"></i>
+                <h2>Delicious Biryani</h2>
+              </div>
+              <p>The biryani was incredibly flavorful with just the right amount of spice. Highly recommended!</p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </main>
+            <div class="profile">
+              <div class="profile-image">
+                <img src="assets/img/testimonials/image1.jpg" alt="Customer 1">
+              </div>
+              <div class="profile-desc">
+                <span>Ahmed Khan</span>
+                <span>Karachi</span>
+              </div>
+            </div>
+          </div>      
+          <!-- Item2 Starts -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <div class="quote">
+                <i class="fa fa-quote-left"></i>
+                <h2>Excellent Nihari</h2>
+              </div>
+              <p>The nihari was perfectly cooked and had a rich, deep flavor. It was worth every bite!</p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </main>
+            <div class="profile">
+              <div class="profile-image">
+                <img src="assets/img/testimonials/image2.jpg" alt="Customer 2">
+              </div>
+              <div class="profile-desc">
+                <span>Sara Ali</span>
+                <span>Lahore</span>
+              </div>
+            </div>
+          </div>
+          <!-- Item3 Starts -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <div class="quote">
+                <i class="fa fa-quote-left"></i>
+                <h2>Amazing Chapli Kebab</h2>
+              </div>
+              <p>The chapli kebabs were absolutely delicious. Juicy and full of flavor. Will definitely come back!</p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </main>
+            <div class="profile">
+              <div class="profile-image">
+                <img src="assets/img/testimonials/image3.jpg" alt="Customer 3">
+              </div>
+              <div class="profile-desc">
+                <span>Farhan Malik</span>
+                <span>Islamabad</span>
+              </div>
+            </div>
+          </div>      
+          <!-- Item4 Starts -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <div class="quote">
+                <i class="fa fa-quote-left"></i>
+                <h2>Fantastic Haleem</h2>
+              </div>
+              <p>The haleem was incredibly rich and flavorful. The perfect comfort food!</p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </main>
+            <div class="profile">
+              <div class="profile-image">
+                <img src="assets/img/testimonials/image4.jpg" alt="Customer 4">
+              </div>
+              <div class="profile-desc">
+                <span>Ayesha Khan</span>
+                <span>Rawalpindi</span>
+              </div>
+            </div>
+          </div>
+          <!-- Item5 Starts -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <div class="quote">
+                <i class="fa fa-quote-left"></i>
+                <h2>Incredible Seekh Kebabs</h2>
+              </div>
+              <p>The seekh kebabs were perfectly spiced and grilled to perfection. Highly recommend!</p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </main>
+            <div class="profile">
+              <div class="profile-image">
+                <img src="assets/img/testimonials/image5.jpg" alt="Customer 5">
+              </div>
+              <div class="profile-desc">
+                <span>Hina Baloch</span>
+                <span>Faisalabad</span>
+              </div>
+            </div>
+          </div>      
+          <!-- Item6 Starts -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <div class="quote">
+                <i class="fa fa-quote-left"></i>
+                <h2>Fantastic Chicken Korma</h2>
+              </div>
+              <p>The chicken korma was creamy and had the perfect blend of spices. An absolute delight!</p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </main>
+            <div class="profile">
+              <div class="profile-image">
+                <img src="assets/img/testimonials/image6.jpg" alt="Customer 6">
+              </div>
+              <div class="profile-desc">
+                <span>Bilal Ahmed</span>
+                <span>Multan</span>
+              </div>
+            </div>
+          </div>
+          <!-- Item6 Ends -->
+        </div>
+      </div>      
+    </section>
+    
+    
+    <!-- ============================== Choose Us ============================== -->
+    <section class="us">
+      <div class="us-heading">
+          <h1 data-aos="fade-up">Why Choose Us?</h1>
+          <p data-aos="fade-up" data-aos-duration="400">Our services guarantee excellence and quality.</p>
+      </div>
+      <div class="services">
+        <div class="service" data-aos="fade-right">
+              <i class="fa-solid fa-burger"></i>
+              <h3>Unmatched Quality</h3>
+              <p>We serve the best and fresh quality food.</p>
+          </div>
+          <div class="service" data-aos="fade-right" data-aos-delay="50">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h3>Fast Delivery</h3>
+              <p>We deliver your food fast and in best condition.</p>
+          </div>
+          <div class="service" data-aos="fade-right" data-aos-delay="200" data-aos-anchor=".fa-truck-fast">
+              <i class="fa-solid fa-tags"></i>
+              <h3>Exclusive Offers</h3>
+              <p>We have exclusive deals and discounts for our valued customers.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- ============================== Discover ================================ -->
+
+    <section class="discover">
+      <h2 data-aos="fade-up">Discover</h2>
+      <p data-aos="fade-up" data-aos-duration="400">Discover new flavour together with our talented chefs who are ready to delight you with new delecious dishes and drinks every day.</p>
+    </section>  
+ 
+    <!-- ============================== Reservation ============================== -->
+    <section class="contact" id="contact">
+      <div class="contact-left" data-aos="fade-up">
+           <div class="name">
+               <label for="name">Enter your name :</label>
+               <input placeholder="Name" type="text" name="name" id="name">
+           </div>
+           <div class="phone">
+               <label for="phone">Enter your phone number :</label>
+               <input placeholder="Phone no." type="text" name="phone" id="phone">
+           </div>
+           <div class="msg">
+               <label for="msgbox">Enter Message :</label>
+               <textarea placeholder="Write Your Message here" id="msgbox" name="msgbox" rows="4" cols="25"></textarea>
+               <button class="send"><i class="fa-solid fa-paper-plane"></i></button>
+           </div>
+      </div>     
+      <div class="contact-right" data-aos="fade-up">
+           <h1>Contact Us</h1>
+           <div class="contact-wrapper">
+               <div>
+                   <h2>Phone Number:</h2>
+                   <p>+91 123 456 7890</p>
+               </div>
+               <div>
+                   <h2>Email Address:</h2>
+                   <p>info@example.com</p>
+               </div>
+               <div>
+                   <h2>Opening Hours:</h2>
+                   <p>Monday - Friday: 10 AM - 8 PM</p>
+                   <p>Saturday: 10 AM - 10 PM</p>
+                   <p>Sunday: Closed</p>
+               </div>
+               <button class="requestcall">
+                   Request a Call
+               </button>
+           </div>
+      </div>
+  </section>
+
+    <!-- ==============================   Footer   ============================== -->
+
+    <footer class="footer">
+      <div class="foot-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Branches</h4>
+            <ul>
+              <li><a href="#">Lahore</a></li>
+              <li><a href="#">Karachi</a></li>
+              <li><a href="#">Islamabad</a></li>
+              <li><a href="#">Quetta</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">shoes</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">order</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+   <section class="copyright">
+      <p><i class="fa-regular fa-copyright"></i> 2023 Flavoury. All rights reserved.</p>
+   </section>
+
+   
+    <!-- ============================== JavaScript ============================== -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- ============================== AOS Library ============================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- ============================ JQuery Link ================================   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- ========================= Owl Carousel js Link============================  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- ======================= Link To Custom Script File =======================   -->
+    <script type="text/javascript" src="assets/js/CarouselScript.js "></script>
+    
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
