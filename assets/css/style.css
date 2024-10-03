@@ -28,6 +28,7 @@ Charm
 html {
   scrollbar-width: thin;
   scrollbar-color: #ddb525 #000;
+  overflow-x:hidden;
 }
 /* For Internet Explorer and Edge  */
 body {
